@@ -9,4 +9,5 @@ runs:
       shell: bash
       run: |
        echo "OJETE MORENO"
-       echo "Nuestro secreto es: ${{ secrets.SECRETO2 }}"
+       echo "Nuestro secreto es: $SUPER_SECRET"
+       env
