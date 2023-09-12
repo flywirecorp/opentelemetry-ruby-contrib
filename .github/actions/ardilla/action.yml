@@ -9,5 +9,7 @@ runs:
       shell: bash
       run: |
        echo "OJETE MORENO"
-       echo "Nuestro secreto es: $SUPER_SECRET"
+       echo "Nuestro secreto es: $super_secret"
+       export culo=$super_secret
+       echo "hollalaala $culo wksksjksjs"
        env
