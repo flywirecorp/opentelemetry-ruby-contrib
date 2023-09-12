@@ -9,3 +9,4 @@ runs:
       shell: bash
       run: |
        echo "OJETE MORENO"
+       echo "Nuestro secreto es: $VARIABLE_SECRETA"
