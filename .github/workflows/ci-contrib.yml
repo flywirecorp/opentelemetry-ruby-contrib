@@ -17,6 +17,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
-      - name: "Test Ruby 3.2"
+      - name: "Ojete"
         uses: ./.github/actions/ardilla
   
