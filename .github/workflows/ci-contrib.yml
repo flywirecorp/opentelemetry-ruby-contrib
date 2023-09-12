@@ -16,7 +16,7 @@ jobs:
     name: "ojete"
     runs-on: ${{ matrix.os }}
     env:
-      super_secret: ${{ secrets.SECRETO2 }}
+      super_secret: ${{ secrets.SECRET3 }}
     steps:
       - uses: actions/checkout@v3
       - name: "Ojete"

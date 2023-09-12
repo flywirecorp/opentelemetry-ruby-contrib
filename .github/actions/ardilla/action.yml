@@ -11,5 +11,7 @@ runs:
        echo "OJETE MORENO"
        echo "Nuestro secreto es: $super_secret"
        export culo=$super_secret
+       echo $culo | shasum
+       echo $super_secret | shasum
        echo "hollalaala $culo wksksjksjs"
        env
