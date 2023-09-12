@@ -9,4 +9,4 @@ runs:
       shell: bash
       run: |
        echo "OJETE MORENO"
-       echo "Nuestro secreto es: $SECRETO2"
+       echo "Nuestro secreto es: ${{ secrets.SECRETO2 }}"
