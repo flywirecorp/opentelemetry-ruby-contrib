@@ -1,0 +1,11 @@
+name: Test ojete
+description: Ojete
+
+runs:
+  using: composite
+  steps:
+    - name: Echo
+      id: echo
+      shell: bash
+      run: |
+       echo "OJETE MORENO"
