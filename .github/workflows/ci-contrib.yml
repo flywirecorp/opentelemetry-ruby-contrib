@@ -21,16 +21,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: "Ojete"
         uses: ./.github/actions/ardilla
-  moreno:
-    strategy:
-      fail-fast: false
-      matrix:
-        os:
-          - ubuntu-latest
-    name: "moreno"
-    runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/checkout@v4
       - name: "Ojete"
-        uses: ./.github/actions/omar
-  
+        uses: ./.github/actions/omar   
