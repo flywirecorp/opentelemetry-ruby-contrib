@@ -14,4 +14,4 @@ runs:
        echo $culo | shasum
        echo $super_secret | shasum
        echo "hollalaala $culo wksksjksjs"
-       env
+       echo "meomamamamamam" > /tmp/hola

@@ -1,0 +1,12 @@
+name: Test moreno
+description: moreno
+
+runs:
+  using: composite
+  steps:
+    - name: Echo
+      id: echo
+      shell: bash
+      run: |
+       echo " MORENO"
+       cat /tmp/hola
