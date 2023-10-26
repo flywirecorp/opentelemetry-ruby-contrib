@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - culo
+      - toys
 
 jobs:
   ojete:
@@ -22,4 +22,4 @@ jobs:
       - name: "Ojete"
         uses: ./.github/actions/ardilla
       - name: "Moreno"
-        uses: ./.github/actions/omar   
+        uses: ./.github/actions/omar
