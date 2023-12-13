@@ -5,8 +5,11 @@ require 'bundler/setup'
 
 Bundler.require
 
+require "net/http"
+
 ENV['OTEL_TRACES_EXPORTER'] = 'console'
 OpenTelemetry::SDK.configure do |c|
+  c.use 'OpenTelemetry::Instrumentation::Net::HTTP'
   c.use 'OpenTelemetry::Instrumentation::Mysql2'
 end
 
@@ -18,4 +21,20 @@ client = Mysql2::Client.new(
   password: ENV.fetch('TEST_MYSQL_PASSWORD') { 'root' }
 )
 
-client.query("SELECT * FROM users WHERE group='x'")
+tracer = OpenTelemetry.tracer_provider.tracer("untraced_test")
+
+tracer.in_span("our_first_span") do |span|
+  OpenTelemetry::Common::Utilities.untraced do
+    client.query("SELECT 1")
+  end
+
+  span.set_attribute("foo", "bar")
+end
+
+tracer.in_span("our_second_span") do |span|
+  OpenTelemetry::Common::Utilities.untraced do
+    Net::HTTP.get(URI('https://www.google.com'))
+  end
+
+  span.set_attribute("foo", "bar")
+end
