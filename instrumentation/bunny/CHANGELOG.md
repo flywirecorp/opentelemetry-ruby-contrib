@@ -1,5 +1,31 @@
 # Release History: opentelemetry-instrumentation-bunny
 
+## [0.22.0](https://github.com/flywirecorp/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-bunny-v0.21.1...opentelemetry-instrumentation-bunny/v0.22.0) (2024-02-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/389))
+* Remove parent repo libraries ([#3](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/3))
+
+### Features
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+
+
+### Bug Fixes
+
+* Base config options ([#499](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* broken test file requirements ([#1286](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/1286)) ([3ec7d8a](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/3ec7d8a456dbd3c9bbad7b397a3da8b8a311d8e3))
+* **bunny:** headers property needs to exist ([#661](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/661)) ([0b560e2](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/0b560e215be158cd511fbc33f89d5d6626b0fcec))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* Remove disable directives leftover from older version of Rubocop ([#835](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/835)) ([66f1786](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/66f1786bfa2fe945898afc3bd18d6d4366ed4df6))
+
+
+### Code Refactoring
+
+* Remove parent repo libraries ([#3](https://github.com/flywirecorp/opentelemetry-ruby-contrib/issues/3)) ([3e85d44](https://github.com/flywirecorp/opentelemetry-ruby-contrib/commit/3e85d4436d338f326816c639cd2087751c63feb1))
+
 ### v0.21.2 / 2024-02-08
 
 * FIXED: Remove disable directives leftover from older version of Rubocop
